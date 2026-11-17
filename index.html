@@ -1,10 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Site Temporarily Offline</title>
+    <title>Buy Stackcrafts Studio Tea ☕</title>
 
     <style>
         * {
@@ -46,8 +46,8 @@
             justify-content: center;
             border-radius: 50%;
             font-size: 38px;
-            background: rgba(255, 193, 7, 0.15);
-            border: 1px solid rgba(255, 193, 7, 0.35);
+            background: rgba(34, 197, 94, 0.15);
+            border: 1px solid rgba(34, 197, 94, 0.35);
         }
 
         h1 {
@@ -221,29 +221,28 @@
 
 <div class="card">
 
-    <!-- MAIN OFFLINE SCREEN -->
+    <!-- MAIN TEA INVITATION SCREEN -->
     <div id="offlineScreen">
 
         <div class="icon">
-            ⚠️
+            ☕
         </div>
 
-        <h1>Site Temporarily Offline</h1>
+        <h1>Buy Stackcrafts Studio Tea</h1>
 
         <p class="description">
-            This site is currently out of its billing plan and needs
-            support to keep the service online.
+            Fuel our next line of code! Support the team with a cup of tea
+            and keep the creative energy flowing.
             <br><br>
-            If you would like to help us restore the site,
-            you can support us through M-Pesa.
+            Contribute instantly using your M-Pesa phone number below.
         </p>
 
         <button class="support-btn" onclick="showSupportForm()">
-            💚 Support the Site
+            ☕ Buy Tea Now
         </button>
 
         <div class="small">
-            Every contribution helps keep the site running.
+            Powered by Stackcrafts Studio Developer Community
         </div>
 
     </div>
@@ -253,11 +252,11 @@
     <div id="supportForm" class="support-form">
 
         <h2 style="text-align:center;">
-            Support the Site
+            Buy Us Tea ☕
         </h2>
 
         <p style="text-align:center;color:#94a3b8;font-size:14px;">
-            Enter the amount you wish to contribute and your M-Pesa number.
+            Enter the amount in KES and your M-Pesa number.
         </p>
 
         <div class="input-group">
@@ -269,7 +268,7 @@
                 type="number"
                 id="amount"
                 class="amount"
-                placeholder="Enter amount"
+                placeholder="e.g. 50"
                 min="1"
                 step="1"
             >
@@ -294,7 +293,7 @@
             id="payBtn"
             onclick="handlePayment()"
         >
-            💳 Support with M-Pesa
+            💳 Pay via M-Pesa STK
         </button>
 
         <button
@@ -313,18 +312,17 @@
     <div id="successScreen" class="success-screen">
 
         <div class="success-icon">
-            ✅
+            🎉
         </div>
 
-        <h1>Thank You!</h1>
+        <h1>Asante Sana!</h1>
 
         <p class="description">
-            Thank you for your support.
+            The tea funds have landed successfully!
             <br><br>
-            Your contribution has been received successfully.
-            We appreciate your support in helping us keep the site online.
+            We truly appreciate your support in keeping Stackcrafts Studio fueled and building awesome apps.
             <br><br>
-            <strong>We'll be back soon.</strong>
+            <strong>Cheers from the team! ☕</strong>
         </p>
 
     </div>
@@ -390,7 +388,7 @@
 
         btn.disabled = false;
 
-        btn.innerHTML = "💳 Support with M-Pesa";
+        btn.innerHTML = "💳 Pay via M-Pesa STK";
 
     }
 
@@ -447,7 +445,7 @@
         if (!amount || amount < 1) {
 
             showStatus(
-                "❌ Please enter a valid support amount.",
+                "❌ Please enter a valid tea amount.",
                 "error"
             );
 
@@ -754,6 +752,5 @@
         });
 
 </script>
-
 </body>
-  </html>
+</html>
